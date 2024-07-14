@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    /* background-color: lightblue; */
+}
+
+.navigation {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.left-nav {
+    height: 100%;
+    width: 30%;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 3vw;
+}
+
+.left-nav h1 {
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+.right-nav {
+    height: 100%;
+    width: 70%;
+    background-color: deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 3vw;
+}
+
+.right-nav a {
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+    font-weight: 500;
+    /* border: 1px solid black; */
+    /* padding: 0 2vw; */
+    margin: 0 2vw;
+}
+
+.right-nav button {
+    font-size: 1vw;
+    font-weight: 500;
+    padding: .7vw 1vw;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: crimson;
+    margin-left: 1vw;
+}
+
+.third {
+    display: none;
+}
+
+
+
+
+/* Media Queries  */
+
+
+@media (min-width: 1px) and (max-width: 425px) {
+    .right-nav {
+        display: none;
+    }
+
+    .third {
+        height: 100%;
+        width: 30%;
+        display: block;
+        background-color: darkorchid;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 6vw;
+    }
+
+    .third i {
+        font-size: 6vw;
+    }
+
+    .left-nav {
+        width: 70%;
+        padding: 0 6vw;
+    }
+
+    .left-nav h1 {
+        font-size: 6vw;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        position: absolute;
+        height: calc(100% - 100px);
+        width: 100%;
+        top: 100px;
+        left: 0;
+        padding: 6vw;
+    }
+
+    .dropdown a {
+        font-size: 5vw;
+        margin: 3vw 0;
+    }
+
+    .dropdown button {
+        display: none;
+    }
+}

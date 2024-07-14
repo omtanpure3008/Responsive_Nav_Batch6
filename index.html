@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navigation">
+            <div class="left-nav">
+                <h1>Logo</h1>
+            </div>
+
+            <div class="right-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Help</a>
+                <a href="#">Contact</a>
+
+                <button>Log In</button>
+            </div>
+
+            <div class="third">
+                <i class="ri-menu-3-line menuButton"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var menuButton = document.querySelector('.menuButton');
+
+        var rightNav = document.querySelector('.right-nav');
+
+        menuButton.addEventListener('click', function() {
+            rightNav.classList.toggle('dropdown');
+        })
+    </script>
+
+
+</body>
+
+</html>
